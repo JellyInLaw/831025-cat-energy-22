@@ -1,0 +1,76 @@
+.live-example {
+  background-color: $background-grey;
+  padding-top: 27px;
+  padding-bottom: 31px;
+}
+
+.live-example__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+.live-example__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 33px;
+}
+
+.live-example__cat-fat,
+.live-example__cat-skinny {
+  margin: 0;
+  padding: 0;
+}
+
+.live-example__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live-example__list-item {
+  width: 124px;
+}
+
+.live-example__term {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  display: block;
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  padding: 14px 21px 18px 21px;
+}
+
+.live-example__description {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+  text-align: center;
+  text-transform: lowercase;
+  margin: 0 auto;
+  margin-top: -10px;
+  padding: 0;
+  display: block;
+  background-color: $background-grey;
+  width: 87px;
+}
+
+.live-example__total {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  margin-top: 27px;
+}
