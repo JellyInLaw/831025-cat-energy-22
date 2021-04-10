@@ -17,6 +17,10 @@
   justify-content: center;
 }
 
+.main-nav__item:last-child {
+  border-bottom: 1px solid $special-grey-border;
+}
+
 .main-nav__item-link {
   text-decoration: none;
   color: $black;
