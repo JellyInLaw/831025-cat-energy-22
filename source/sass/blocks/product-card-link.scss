@@ -1,0 +1,25 @@
+.product-card-link {
+  text-decoration: none;
+  grid-column: 2/3;
+}
+
+.product-card-link__title {
+  font-family: $title-font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.product-card-link:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
