@@ -1,0 +1,81 @@
+.food-options-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 22px;
+}
+
+.food-options-list__item {
+  background-color: $basic-grey;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 22px;
+}
+
+.food-options-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.food-options-list__item-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  padding-left: 71px;
+  margin-bottom: 29px;
+  position: relative;
+}
+
+.food-options-list__item-title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+
+.food-options-list__item:nth-child(1) .food-options-list__item-title::before {
+  left: 0;
+  top: -10px;
+  width: 50px;
+  height: 53px;
+  background: url("../../img/slimming.svg") no-repeat center center;
+}
+
+.food-options-list__item:nth-child(2) .food-options-list__item-title::before {
+  left: -8px;
+  top: -10px;
+  width: 67px;
+  height: 50px;
+  background: url("../../img/weight-gain.svg") no-repeat center center;
+}
+
+.food-options-list__item-text {
+  max-width: 230px;
+  border-bottom: 1px solid $border-grey;
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+}
+
+.food-options-list__item-link {
+  font-family: "Oswald", serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  position: relative;
+}
+
+.food-options-list__item-link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  top: 7px;
+  right: -47px;
+  background: url("../../img/black-arrow.svg") no-repeat center center;
+}
