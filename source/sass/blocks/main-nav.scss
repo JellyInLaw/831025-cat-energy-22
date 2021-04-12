@@ -20,9 +20,17 @@
 .main-nav__item {
   padding-top: 22px;
   padding-bottom: 24px;
-  border-top: 1px solid $special-grey-border;
+  border-bottom: 1px solid $special-grey-border;
   display: flex;
   justify-content: center;
+
+  &:first-child {
+    border-top: 1px solid $special-grey-border;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .main-nav__item:last-child {
