@@ -23,6 +23,7 @@
 .how-it-works__item {
   padding-left: 80px;
   position: relative;
+  min-height: 55px;
 }
 
 .how-it-works__item:not(:last-child) {
@@ -41,20 +42,20 @@
 
 .how-it-works__item:nth-child(1)::before {
   background: url("../../img/how-it-works-first.svg") no-repeat center center,
-    url("../../img/how-it-works-first-child.svg") no-repeat center center;
+    url("../../img/how-it-works-background.svg") no-repeat center center;
 }
 
 .how-it-works__item:nth-child(2)::before {
   background: url("../../img/how-it-works-second.svg") no-repeat center center,
-    url("../../img/how-it-works-second-child.svg") no-repeat center center;
+    url("../../img/how-it-works-background.svg") no-repeat center center;
 }
 
 .how-it-works__item:nth-child(3)::before {
   background: url("../../img/how-it-works-third.svg") no-repeat center center,
-    url("../../img/how-it-works-third-child.svg") no-repeat center center;
+    url("../../img/how-it-works-background.svg") no-repeat center center;
 }
 
 .how-it-works__item:nth-child(4)::before {
   background: url("../../img/how-it-works-fourth.svg") no-repeat center center,
-    url("../../img/how-it-works-fourth-child.svg") no-repeat center center;
+    url("../../img/how-it-works-background.svg") no-repeat center center;
 }

@@ -10,6 +10,7 @@
   padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 22px;
+  padding-right: 33px;
 }
 
 .food-options-list__item:not(:last-child) {
@@ -53,7 +54,6 @@
 }
 
 .food-options-list__item-text {
-  max-width: 230px;
   border-bottom: 1px solid $border-grey;
   padding-bottom: 23px;
   margin-bottom: 19px;
