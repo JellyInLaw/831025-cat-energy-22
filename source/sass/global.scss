@@ -9,7 +9,6 @@
   margin: 0;
 }
 
-
 .visualy-hidden {
   position: absolute;
   width: 1px;
@@ -21,4 +20,9 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
 }
