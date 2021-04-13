@@ -3,18 +3,23 @@
   padding: 0;
   list-style: none;
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .food-options-list__item {
   background-color: $basic-grey;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 22px;
-  padding-right: 33px;
-}
+  padding: 30px 33px 22px 20px;
 
-.food-options-list__item:not(:last-child) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 279px 57px 53px;
+  }
 }
 
 .food-options-list__item-title {
@@ -29,12 +34,22 @@
   padding-left: 71px;
   margin-bottom: 29px;
   position: relative;
-}
 
-.food-options-list__item-title::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+  }
 }
 
 .food-options-list__item:nth-child(1) .food-options-list__item-title::before {
@@ -57,6 +72,40 @@
   border-bottom: 1px solid $border-grey;
   padding-bottom: 23px;
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .food-options-list__item-text {
+    position: relative;
+  }
+
+  .food-options-list__item-text::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+  }
+
+  .food-options-list__item:nth-child(1) .food-options-list__item-text::after {
+    right: -217px;
+    top: -50px;
+    width: 200px;
+    height: 211px;
+    background: url("../../img/slimming.svg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .food-options-list__item:nth-child(2) .food-options-list__item-text::after {
+    right: -260px;
+    top: -50px;
+    width: 268px;
+    height: 200px;
+    background: url("../../img/weight-gain.svg") no-repeat center center;
+    background-size: cover;
+  }
 }
 
 .food-options-list__item-link {

@@ -6,4 +6,12 @@
 
 .footer-container {
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }

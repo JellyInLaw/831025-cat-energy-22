@@ -3,4 +3,18 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    width: 708px;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-rows: 2;
+  }
+}
+
+.live-example-demonstration__img {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }

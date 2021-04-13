@@ -6,4 +6,11 @@
   padding-bottom: 32px;
   background-color: $basic-grey;
   margin-top: -4px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    padding: 0;
+    padding-left: 30px;
+    margin: 0;
+  }
 }

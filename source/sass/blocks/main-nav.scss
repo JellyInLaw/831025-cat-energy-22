@@ -11,6 +11,14 @@
   @media (max-width: $mobile-only) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__open {
@@ -26,10 +34,32 @@
 
   &:first-child {
     border-top: 1px solid $special-grey-border;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   &:last-child {
     border-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding-top: 17px;
+    padding-bottom: 10px;
+
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
+}
+
+.main-nav .main-nav__item--current {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-green;
   }
 }
 

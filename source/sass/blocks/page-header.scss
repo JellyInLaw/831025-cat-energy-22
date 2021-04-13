@@ -3,6 +3,10 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
 
     .page-header__logo-img {
       background: url("../../img/logo/logo-tablet.svg") no-repeat center center;
@@ -14,5 +18,13 @@
     .page-header__logo-text {
       display: none;
     }
+  }
+}
+
+.page-header .container {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
   }
 }
