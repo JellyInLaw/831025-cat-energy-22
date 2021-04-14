@@ -1,0 +1,58 @@
+.form-additionally {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.form-additionally__title {
+  padding: 0;
+  margin: 0;
+  font-family: $title-font;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  min-width: 176px;
+  padding-left: 20px;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid $basic-green;
+    height: 0;
+    margin-top: 15px;
+    margin-left: 13px;
+  }
+}
+
+.form-additionally-label {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid $special-grey;
+    margin-right: 16px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.form-additionally-input:checked + .form-additionally-label::before {
+  background: url("../../img/tick.svg") no-repeat center center;
+}

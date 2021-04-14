@@ -1,0 +1,41 @@
+.form-general {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+}
+
+.form-label {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  display: flex;
+  align-items: center;
+}
+
+.form-label:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form-input {
+  border: 1px solid $special-grey-border;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  margin-left: 13px;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
