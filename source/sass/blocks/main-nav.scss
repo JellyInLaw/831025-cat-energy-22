@@ -8,10 +8,6 @@
   padding: 0;
   margin: 0;
 
-  @media (max-width: $mobile-only) {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 18px;
