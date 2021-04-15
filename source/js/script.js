@@ -2,7 +2,9 @@
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
 
-mainNav.classList.add("visually-hidden");
+if (document.documentElement.clientWidth < 768) {
+  mainNav.classList.add("visually-hidden");
+}
 
 navToggle.addEventListener("click", function () {
   navToggle.classList.toggle("nav-toggle__open");
