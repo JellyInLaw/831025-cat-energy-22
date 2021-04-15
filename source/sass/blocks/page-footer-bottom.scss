@@ -1,0 +1,37 @@
+.page-footer-bottom {
+  background-color: $basic-grey;
+  margin-top: -4px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 30px 61px 30px;
+    margin-top: -8px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    width: 162px;
+  }
+}
+
+.page-footer-bottom .container {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.page-footer-top {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.page-footer-top > .container {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: $white;
+    padding: 66px 89px 51px 76px;
+    top: 95px;
+    margin-left: 7.6%;
+  }
+}

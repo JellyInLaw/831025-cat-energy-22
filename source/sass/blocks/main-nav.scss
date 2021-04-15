@@ -19,6 +19,12 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+  }
 }
 
 .main-nav__open {
@@ -63,8 +69,20 @@
   }
 }
 
+.page-index .main-nav__item--current {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
+  }
+}
+
 .main-nav__item-link {
   text-decoration: none;
   color: $black;
   text-align: center;
+}
+
+.page-index .main-nav__item-link {
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }

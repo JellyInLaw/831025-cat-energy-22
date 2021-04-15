@@ -6,6 +6,11 @@
     padding-top: 45px;
     padding-bottom: 92px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 30px;
+  }
 }
 
 .how-it-works__title {
@@ -22,6 +27,12 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .how-it-works__list {
@@ -35,6 +46,11 @@
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 50px;
     grid-row-gap: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 }
 

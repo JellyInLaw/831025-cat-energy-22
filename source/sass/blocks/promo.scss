@@ -9,11 +9,9 @@
     color: $black;
     padding-top: 62px;
   }
-}
 
-.promo-background {
-  @media (min-width: $tablet-width) {
-    display: none;
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
   }
 }
 
@@ -32,6 +30,10 @@
     line-height: 60px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .promo__text {
@@ -45,6 +47,10 @@
     line-height: 20px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .promo__img {
@@ -57,12 +63,24 @@
     z-index: -1;
     //тут надо заменить картинку на нормальную
   }
+
+  @media (min-width: $desktop-width) {
+    left: 560px;
+    bottom: 25px;
+    //тут надо заменить картинку на нормальную
+  }
 }
 
 .promo .container {
   @media (min-width: $tablet-width) {
     padding-left: 117px;
     padding-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    padding-bottom: 267px;
+    position: relative;
   }
 }
 

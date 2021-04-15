@@ -1,5 +1,7 @@
 .social-block {
-  margin-top: -4px;
+  @media (min-width: $tablet-width) {
+    min-width: 130px;
+  }
 }
 
 .social-list {
@@ -9,15 +11,11 @@
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin: 0;
     padding: 0;
-    margin-left: 65px;
-    width: 129px;
-    margin-top: 5px;
   }
 }
 

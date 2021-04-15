@@ -7,17 +7,34 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 24px;
+  }
 
-    .page-header__logo-img {
-      background: url("../../img/logo/logo-tablet.svg") no-repeat center center;
-      width: 0;
-      height: 0;
-      padding: 26px 87px 26px 87px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 53px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
 
-    .page-header__logo-text {
-      display: none;
-    }
+.page-header .page-header__logo-img {
+  @media (min-width: $tablet-width) {
+    background: url("../../img/logo/logo-tablet.svg") no-repeat center center;
+    width: 0;
+    height: 0;
+    padding: 26px 87px 26px 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29.5px 101px 29.5px 101px;
+    background-size: cover;
+  }
+}
+
+.page-header .page-header__logo-text {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
