@@ -2,8 +2,26 @@
   border-top: 1px solid $special-grey;
   padding-bottom: 19px;
   padding-top: 13px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .product-card-additional .product-card-link__title {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 161px;
+    margin: 0;
+  }
+}
+
+.product-card-additional .product-card__button {
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin: 0;
+  }
 }

@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 41px 44px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 161px 37px 40px 37px;
+  }
 }
 
 .product-card__button {
