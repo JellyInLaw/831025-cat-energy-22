@@ -6,6 +6,7 @@
   border-bottom: 1px solid $border-grey;
   padding-top: 23px;
   padding-bottom: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
@@ -22,8 +23,8 @@
     width: 568px;
     margin: 0;
     padding: 27px;
-    position: relative;
-    top: 250px;
+    position: absolute;
+    top: 433px;
     margin-left: 80px;
   }
 }
@@ -48,6 +49,11 @@
 
   &:not(:last-child) {
     margin-bottom: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
