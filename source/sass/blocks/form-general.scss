@@ -5,11 +5,22 @@
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
     padding-left: 40px;
     margin-bottom: 72px;
     padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-general-container {
+    display: inline-block;
+    width: 569px;
+    padding-right: 0;
   }
 }
 
@@ -21,10 +32,19 @@
   color: $special-dark-grey;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-label:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-input {
@@ -46,4 +66,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

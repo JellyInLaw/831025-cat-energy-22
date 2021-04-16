@@ -16,11 +16,25 @@
     width: 628px;
     border: 1px solid $border-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 568px;
+    margin: 0;
+    padding: 27px;
+    position: relative;
+    top: 250px;
+    margin-left: 80px;
+  }
 }
 
 .form-radio .container {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .radio-label {
