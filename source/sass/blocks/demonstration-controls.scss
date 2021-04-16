@@ -4,6 +4,10 @@
   width: 230px;
   justify-content: space-around;
   margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 570px;
+  }
 }
 
 .demonstration-controls__label-left,
@@ -13,6 +17,16 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+    border-bottom: 1px dotted $special-grey-border;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .demonstration-controls__bar {
@@ -26,6 +40,14 @@
   justify-content: start;
   padding: 3px 5px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    border: none;
+    background-color: $special-grey-control-bar;
+    height: 6px;
+    position: relative;
+  }
 }
 
 .demonstration-controls__progress-bar {
@@ -33,4 +55,14 @@
   height: 6px;
   border-radius: 3px;
   width: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 6px;
+    border: 12px solid $white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    box-shadow: 0 0 0 1px $special-grey-2, 0 1px 3px $drop-shadow-control;
+  }
 }

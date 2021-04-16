@@ -2,6 +2,14 @@
   display: flex;
   justify-content: space-between;
   padding: 28px 0 28px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 41px 52px 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .contacts__text {
@@ -11,10 +19,33 @@
   text-transform: uppercase;
   color: $black;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 21px;
+    width: 171px;
+  }
 }
 
 .contacts__address {
   width: 140px;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__address-spb {
+    display: block;
+    margin-top: 10px;
+  }
 }

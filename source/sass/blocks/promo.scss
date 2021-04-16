@@ -2,10 +2,17 @@
   font-family: "Oswald", sans-serif;
   color: $white;
   text-align: center;
-  font-style: normal;
-  font-weight: normal;
   padding-top: 27px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    padding-top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+  }
 }
 
 .promo__title {
@@ -16,6 +23,17 @@
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .promo__text {
@@ -23,4 +41,54 @@
   font-size: 14px;
   line-height: 14px;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    //тут надо заменить картинку на нормальную
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 560px;
+    bottom: 25px;
+    //тут надо заменить картинку на нормальную
+  }
+}
+
+.promo .container {
+  @media (min-width: $tablet-width) {
+    padding-left: 117px;
+    padding-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    padding-bottom: 267px;
+    position: relative;
+  }
+}
+
+.promo__button {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  }
 }

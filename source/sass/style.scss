@@ -5,7 +5,9 @@
 
 /* blocks */
 @import "blocks/button.scss";
+@import "blocks/page-header.scss";
 @import "blocks/page-header-wrapper.scss";
+@import "blocks/nav-toggle.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
 @import "blocks/promo-background.scss";
@@ -15,8 +17,8 @@
 @import "blocks/live-example-demonstration.scss";
 @import "blocks/demonstration-controls.scss";
 @import "blocks/contacts.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/page-footer-logo-wrapper.scss";
+@import "blocks/page-footer-top.scss";
+@import "blocks/page-footer-bottom.scss";
 @import "blocks/map.scss";
 @import "blocks/social-block.scss";
 @import "blocks/copyright.scss";
