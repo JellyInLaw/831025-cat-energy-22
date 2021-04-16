@@ -54,11 +54,11 @@
   }
 
   &:first-child::after {
-    background: url("../../img/icon-email.svg") no-repeat center center;
+    background: url("../img/icon-email.svg") no-repeat center center;
   }
 
   &:nth-child(2)::after {
-    background: url("../../img/icon-phone.svg") no-repeat center center;
+    background: url("../img/icon-phone.svg") no-repeat center center;
   }
 }
 
