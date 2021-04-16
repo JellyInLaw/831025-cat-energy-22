@@ -6,6 +6,14 @@ if (document.documentElement.clientWidth < 768) {
   mainNav.classList.add("visually-hidden");
 }
 
+window.addEventListener("resize", function () {
+  if (document.documentElement.clientWidth < 768) {
+    mainNav.classList.add("visually-hidden");
+  } else {
+    mainNav.classList.remove("visually-hidden");
+  }
+});
+
 navToggle.addEventListener("click", function () {
   navToggle.classList.toggle("nav-toggle__open");
   mainNav.classList.toggle("visually-hidden");
