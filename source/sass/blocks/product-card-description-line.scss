@@ -29,6 +29,10 @@
     border-bottom: none;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
 }
 
 .product-card-additional .product-card-description-line__element:nth-child(2) {

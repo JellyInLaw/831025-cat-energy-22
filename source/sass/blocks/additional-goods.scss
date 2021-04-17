@@ -60,4 +60,8 @@
     left: -13%;
     top: 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: -40%;
+  }
 }

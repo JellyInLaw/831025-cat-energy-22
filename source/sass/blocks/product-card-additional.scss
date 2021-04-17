@@ -12,6 +12,15 @@
     border-bottom: none;
     padding: 26px 38px 28px 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 25px;
+    padding-bottom: 17px;
+  }
 }
 
 .product-card-additional .product-card-link__title {
@@ -20,10 +29,15 @@
   @media (min-width: $desktop-width) {
     width: 161px;
     margin: 0;
+    text-align: left;
+    margin-right: 163px;
   }
 }
 
 .product-card-additional .product-card__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -31,5 +45,7 @@
   @media (min-width: $desktop-width) {
     width: 244px;
     margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 }

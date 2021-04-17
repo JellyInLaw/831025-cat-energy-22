@@ -6,13 +6,19 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    height: 100%;
     display: inline-block;
+    vertical-align: top;
+    margin-top: 183px;
+    padding: 0;
+    margin-bottom: 86px;
   }
 }
 
 .catalog-promo-block .container {
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -38,7 +44,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 55px 41px 42px 41px;
+    padding: 205px 41px 42px 41px;
+    text-align: center;
   }
 }
 
@@ -56,5 +63,11 @@
     position: absolute;
     left: 78px;
     top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 55px;
+    left: 84px;
+    margin-bottom: 46px;
   }
 }
