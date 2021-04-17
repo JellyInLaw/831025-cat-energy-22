@@ -29,6 +29,19 @@
   box-sizing: border-box;
   margin-bottom: 36px;
   margin-top: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: $white;
+    width: 415px;
+    padding-right: 36px;
+    padding-left: 36px;
+    margin-left: 30px;
+  }
 }
 
 .additional-goods__title::after {
@@ -39,4 +52,12 @@
   height: 0;
   margin-top: 15px;
   margin-left: 22px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    left: -13%;
+    top: 7px;
+  }
 }

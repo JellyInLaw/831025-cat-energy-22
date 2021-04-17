@@ -7,6 +7,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 161px 37px 40px 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
   }
 }
 
@@ -17,4 +21,8 @@
   line-height: 20px;
   grid-column: 1/3;
   grid-row: 3/4;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
 }
