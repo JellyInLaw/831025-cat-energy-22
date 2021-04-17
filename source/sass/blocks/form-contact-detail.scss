@@ -82,6 +82,11 @@
   display: flex;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 45%;
   }
@@ -148,6 +153,11 @@
   flex-basis: 100%;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::placeholder {
     font-family: $title-font;
     font-style: normal;
@@ -156,5 +166,10 @@
     line-height: 16px;
     text-transform: uppercase;
     color: $special-dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
