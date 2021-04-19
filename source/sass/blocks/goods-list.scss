@@ -2,8 +2,35 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 110px;
+    max-width: 1440px;
+  }
+}
+
+.goods-list .container {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .goods-list__item {
   border-bottom: 1px solid $special-grey-2;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    border: none;
+    background-color: $basic-grey;
+  }
 }

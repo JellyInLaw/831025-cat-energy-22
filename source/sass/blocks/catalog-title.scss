@@ -8,4 +8,17 @@
   text-align: center;
   padding-top: 27px;
   padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 65px;
+    padding-bottom: 83px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
 }

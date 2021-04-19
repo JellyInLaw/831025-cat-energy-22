@@ -14,6 +14,11 @@
   padding: 0;
   margin-bottom: 10px;
   width: 100px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product-card-link:nth-child(2) {
