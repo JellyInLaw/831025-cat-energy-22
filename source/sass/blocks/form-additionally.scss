@@ -105,8 +105,18 @@
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  &:hover {
+    &::before {
+      border-color: $special-grey-4;
+    }
+  }
 }
 
 .form-additionally-input:checked + .form-additionally-label::before {
   background: url("../img/tick.svg") no-repeat center center;
+}
+
+.form-additionally-input:disabled + .form-additionally-label {
+  opacity: 0.3;
 }

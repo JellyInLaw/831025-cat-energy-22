@@ -69,3 +69,12 @@
 .radio-input:checked + .radio-label::before {
   background: url("../img/radiobutton-active.svg") no-repeat center center;
 }
+
+.radio-label:hover::before,
+.radio-input:focus + .radio-label::before {
+  border-color: $special-grey-4;
+}
+
+.radio-input:disabled + .radio-label {
+  opacity: 0.3;
+}
