@@ -1,5 +1,5 @@
 .page-footer-bottom {
-  background-color: $basic-grey;
+  width: 100%;
   margin-top: -4px;
 
   @media (min-width: $tablet-width) {
@@ -8,11 +8,11 @@
     padding: 55px 30px 61px 30px;
     margin-top: -8px;
     align-items: center;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 55px 0 61px 0;
   }
 }
 
