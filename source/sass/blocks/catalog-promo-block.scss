@@ -28,10 +28,11 @@
   font-size: 16px;
   line-height: 20px;
   display: block;
-  background: $basic-green url("../../img/special-invitation-background.png")
+  background: $basic-green url("../img/special-invitation-background.png")
     no-repeat center center;
   text-align: center;
   padding: 55px 55px 43px 55px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -46,6 +47,7 @@
     margin: 0;
     padding: 205px 41px 42px 41px;
     text-align: center;
+
   }
 }
 
@@ -55,7 +57,7 @@
   margin: 0 auto;
   width: 78px;
   height: 80px;
-  background: url("../../img/icon-gift.svg") no-repeat center center;
+  background: url("../img/icon-gift.svg") no-repeat center center;
   margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {

@@ -81,7 +81,7 @@
   top: -10px;
   width: 50px;
   height: 53px;
-  background: url("../../img/slimming.svg") no-repeat center center;
+  background: url("../img/slimming.svg") no-repeat center center;
 
   @media (min-width: $desktop-width) {
     width: 100px;
@@ -96,7 +96,7 @@
   top: -10px;
   width: 67px;
   height: 50px;
-  background: url("../../img/weight-gain.svg") no-repeat center center;
+  background: url("../img/weight-gain.svg") no-repeat center center;
 
   @media (min-width: $desktop-width) {
     width: 134px;
@@ -132,7 +132,7 @@
     top: -50px;
     width: 200px;
     height: 211px;
-    background: url("../../img/slimming.svg") no-repeat center center;
+    background: url("../img/slimming.svg") no-repeat center center;
     background-size: cover;
   }
 
@@ -141,7 +141,7 @@
     top: -50px;
     width: 268px;
     height: 200px;
-    background: url("../../img/weight-gain.svg") no-repeat center center;
+    background: url("../img/weight-gain.svg") no-repeat center center;
     background-size: cover;
   }
 }
@@ -174,5 +174,5 @@
   height: 10px;
   top: 7px;
   right: -47px;
-  background: url("../../img/black-arrow.svg") no-repeat center center;
+  background: url("../img/black-arrow.svg") no-repeat center center;
 }

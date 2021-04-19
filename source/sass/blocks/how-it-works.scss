@@ -87,22 +87,22 @@
 }
 
 .how-it-works__item:nth-child(1)::before {
-  background: url("../../img/how-it-works-first.svg") no-repeat center center,
+  background: url("../img/how-it-works-first.svg") no-repeat center center,
     $basic-green;
 }
 
 .how-it-works__item:nth-child(2)::before {
-  background: url("../../img/how-it-works-second.svg") no-repeat center center,
+  background: url("../img/how-it-works-second.svg") no-repeat center center,
     $basic-green;
 }
 
 .how-it-works__item:nth-child(3)::before {
-  background: url("../../img/how-it-works-third.svg") no-repeat center center,
+  background: url("../img/how-it-works-third.svg") no-repeat center center,
     $basic-green;
 }
 
 .how-it-works__item:nth-child(4)::before {
-  background: url("../../img/how-it-works-fourth.svg") no-repeat center center,
+  background: url("../img/how-it-works-fourth.svg") no-repeat center center,
     $basic-green;
 }
 

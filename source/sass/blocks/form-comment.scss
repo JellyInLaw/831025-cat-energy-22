@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .form-comment__title {
@@ -13,20 +17,47 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  min-width: 176px;
+  width: 121px;
   padding-left: 20px;
-  display: flex;
-  box-sizing: border-box;
+  padding-right: 20px;
   margin-bottom: 35px;
+  position: relative;
+  background-color: $white;
 
   &::after {
     content: "";
-    display: block;
-    width: 100%;
-    border: 1px solid $basic-green;
-    height: 0;
-    margin-top: 15px;
-    margin-left: 13px;
+    position: absolute;
+    height: 2px;
+    top: 15px;
+    left: 0;
+    background: $basic-green;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $white;
+    width: 182px;
+    margin-bottom: 76px;
+
+    &::after {
+      top: 20px;
+      left: -12%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+
+    &::after {
+      top: 20px;
+      left: -27%;
+    }
   }
 }
 
@@ -42,11 +73,27 @@
   text-transform: uppercase;
   color: $special-dark-grey;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    box-sizing: border-box;
+    width: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    width: 100%;
+  }
+
   &::placeholder {
     font-family: $title-font;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     color: $special-dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
