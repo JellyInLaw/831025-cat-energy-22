@@ -74,6 +74,7 @@
 }
 
 .form-contact-detail-label {
+  position: relative;
   font-family: $title-font;
   font-size: 16px;
   line-height: 18px;
@@ -103,31 +104,6 @@
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    right: 33px;
-    width: 20px;
-    height: 20px;
-
-    @media (min-width: $tablet-width) {
-      right: 80px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 80px;
-    }
-  }
-
-  &:first-child::after {
-    background: url("../img/icon-email.svg") no-repeat center center;
-
-    @media (min-width: $desktop-width) {
-      right: 800px;
-    }
-  }
-
   &:nth-child(2)::after {
     background: url("../img/icon-phone.svg") no-repeat center center;
 
@@ -151,7 +127,6 @@
   padding-right: 40px;
   margin-left: 8px;
   flex-basis: 100%;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -171,5 +146,51 @@
       font-size: 20px;
       line-height: 30px;
     }
+  }
+}
+
+.form-contact-detail-label svg {
+  width: 20px;
+  height: 20px;
+  transform: scale(1.4);
+  position: absolute;
+  right: 20px;
+
+  @media (max-width: $mobile-only) {
+    transform: scale(1);
+  }
+}
+
+.form-contact-detail-input:focus + svg {
+  & line {
+    stroke: $basic-green;
+  }
+
+  & path {
+    stroke: $basic-green;
+  }
+}
+
+.form-contact-detail__phone-input:focus + svg {
+  & path {
+    fill: $basic-green;
+    stroke: none;
+  }
+}
+
+.input-error + svg {
+  & line {
+    stroke: $status-error;
+  }
+
+  & path {
+    stroke: $status-error;
+  }
+}
+
+.form-contact-detail__phone-input.input-error + svg {
+  & path {
+    fill: $status-error;
+    stroke: none;
   }
 }
