@@ -3,10 +3,14 @@
   padding-bottom: 19px;
   padding-top: 13px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid $special-grey;
+    border-bottom: none;
+    padding: 26px 38px 28px 38px;
   }
 }
 
@@ -20,6 +24,10 @@
 }
 
 .product-card-additional .product-card__button {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
     margin: 0;
