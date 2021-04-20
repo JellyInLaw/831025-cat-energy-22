@@ -18,20 +18,22 @@
   text-transform: uppercase;
   color: $black;
   border: none;
+  background: transparent;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
     border-bottom: 1px dotted $special-grey-3;
+    cursor: pointer;
+
+    &:hover,
+    :focus {
+      border-bottom: 1px solid $special-grey;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  &:hover,
-  :focus {
-    border-bottom: 1px solid $special-grey;
   }
 }
 
