@@ -41,6 +41,38 @@
   position: relative;
   background-color: $white;
 
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: 15px;
+    left: 100%;
+    background: $basic-green;
+    width: 100vw;
+
+    @media (min-width: $desktop-width) {
+      left: 110%;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: 15px;
+    right: 100%;
+    background: $basic-green;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      right: 98%;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 109%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
