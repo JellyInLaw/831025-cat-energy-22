@@ -24,17 +24,6 @@
   position: relative;
   background-color: $white;
 
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    top: 15px;
-    left: 0;
-    background: $basic-green;
-    width: 100vw;
-    z-index: -1;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
@@ -44,20 +33,10 @@
     background-color: $white;
     width: 182px;
     margin-bottom: 76px;
-
-    &::after {
-      top: 20px;
-      left: -12%;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 70px;
-
-    &::after {
-      top: 20px;
-      left: -27%;
-    }
   }
 }
 
