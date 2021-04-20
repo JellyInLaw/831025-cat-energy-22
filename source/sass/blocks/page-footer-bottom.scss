@@ -17,15 +17,29 @@
 }
 
 .page-footer__logo {
-  display: block;
   margin: 0 auto;
   padding-top: 39px;
   padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
     width: 162px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

@@ -17,15 +17,21 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+  border: none;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
-    border-bottom: 1px dotted $special-grey-border;
+    border-bottom: 1px dotted $special-grey-3;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover,
+  :focus {
+    border-bottom: 1px solid $special-grey;
   }
 }
 
@@ -64,5 +70,19 @@
     top: -12px;
     left: 50%;
     box-shadow: 0 0 0 1px $special-grey-2, 0 1px 3px $drop-shadow-control;
+    filter: drop-shadow(0 1px 3px $drop-shadow-control);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px $drop-shadow-control-hover);
+    }
+
+    &:focus {
+      filter: drop-shadow(0 2px 4px $drop-shadow-control-hover);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $basic-green;
+      filter: drop-shadow(0 3px 5px $drop-shadow-control-active);
+    }
   }
 }
