@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   background-position: top center;
 
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-promo-background@2x.png");
+    background-size: cover;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -21,5 +26,10 @@
     display: block;
     background-image: url("../img/index-promo-background-desktop.png");
     background-size: cover;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-promo-background-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }

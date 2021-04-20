@@ -26,13 +26,23 @@
       <div class="container">
         <div class="page-header-wrapper">
           <a class="page-header__logo">
-            <img
-              class="page-header__logo-img"
-              src="img/logo/logo.svg"
-              alt="Логотип CAT ENERGY"
-              width="34"
-              height="38"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo/logo-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo/logo-tablet.svg"
+              />
+              <img
+                class="page-header__logo-img"
+                src="img/logo/logo.svg"
+                alt="Логотип CAT ENERGY"
+                width="34"
+                height="38"
+              />
+            </picture>
           </a>
           <a class="page-header__logo">
             <img
@@ -81,19 +91,22 @@
           <picture>
             <source
               media="(min-width: 1440px)"
-              srcset="img/index-can-cat-energy-desktop.png"
-              width="522"
-              height="499"
+              srcset="
+                img/index-can-cat-energy-desktop.png    1x,
+                img/index-can-cat-energy-desktop@2x.png 2x
+              "
             />
             <source
               media="(min-width: 768px)"
-              srcset="img/index-can-cat-energy-tablet.png"
-              width="709"
-              height="609"
+              srcset="
+                img/index-can-cat-energy-tablet.png    1x,
+                img/index-can-cat-energy-tablet@2x.png 2x
+              "
             />
             <img
               class="promo__img"
               src="img/index-can-cat-energy.png"
+              srcset="img/index-can-cat-energy@2x.png 2x"
               alt="Изображение упаковки CAT ENERGY"
               width="280"
               height="270"
@@ -181,6 +194,7 @@
             <!-- Надо оживлять -->
             <img
               class="live-example-demonstration__img"
+              srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x"
               src="img/cat-fat.png"
               alt="Толстенький кот"
               width="280"
@@ -188,6 +202,7 @@
             <img
               class="live-example-demonstration__img visually-hidden"
               src="img/cat-skinny.png"
+              srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x"
               alt="Нормальный кот"
               width="280"
             />

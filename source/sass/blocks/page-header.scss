@@ -20,15 +20,13 @@
 
 .page-header .page-header__logo-img {
   @media (min-width: $tablet-width) {
-    background: url("../img/logo/logo-tablet.svg") no-repeat center center;
-    width: 0;
-    height: 0;
-    padding: 26px 87px 26px 87px;
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 29.5px 101px 29.5px 101px;
-    background-size: cover;
+    width: 202px;
+    height: 59px;
   }
 
   &:hover {
