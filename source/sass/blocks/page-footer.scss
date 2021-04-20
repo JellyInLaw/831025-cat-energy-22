@@ -1,0 +1,22 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
+.page-footer-container {
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  @media (max-width: $mobile-only) {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
