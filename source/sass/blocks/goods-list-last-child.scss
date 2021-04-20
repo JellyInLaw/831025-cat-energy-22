@@ -55,6 +55,19 @@
   color: $special-dark-grey;
   background-color: $basic-grey;
   margin-bottom: 25px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:focus {
+    background-color: $special-grey-2;
+  }
+
+  &:active {
+    color: $special-dark-grey-active;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -66,17 +79,5 @@
     width: 170px;
     padding-left: 20px;
     padding-right: 20px;
-
-    &:hover {
-      background-color: $special-grey-2;
-    }
-
-    &:focus {
-      background-color: $special-grey-2;
-    }
-
-    &:active {
-      color: $special-dark-grey-active;
-    }
   }
 }
