@@ -64,10 +64,19 @@
   margin-right: 15px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio-input:checked + .radio-label::before {
   background: url("../img/radiobutton-active.svg") no-repeat center center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 18px 18px;
+  }
 }
 
 .radio-label:hover::before,
