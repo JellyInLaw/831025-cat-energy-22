@@ -89,6 +89,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     margin-left: 40px;
