@@ -30,6 +30,21 @@
     padding: 29.5px 101px 29.5px 101px;
     background-size: cover;
   }
+
+  &:hover {
+    opacity: 0.8;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  :active {
+    opacity: 0.8;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &:active {
+    opacity: 0.6;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 
 .page-header .page-header__logo-text {

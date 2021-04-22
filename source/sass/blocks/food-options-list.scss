@@ -164,15 +164,33 @@
   text-transform: uppercase;
   color: $black;
   position: relative;
+
+  &:hover {
+    &::after {
+      width: 32px;
+      right: -53px;
+    }
+  }
+
+  &:focus {
+    &::after {
+      width: 32px;
+      right: -53px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .food-options-list__item-link::after {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 32px;
+  width: 24px;
   height: 10px;
   top: 7px;
-  right: -47px;
-  background: url("../img/black-arrow.svg") no-repeat center center;
+  right: -45px;
+  background: url("../img/black-arrow.svg") no-repeat center right;
 }

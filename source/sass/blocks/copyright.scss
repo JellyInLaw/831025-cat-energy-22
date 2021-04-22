@@ -20,3 +20,19 @@
     margin-right: 22px;
   }
 }
+
+.copyright__link.copyright__html-academy-logo {
+  margin-right: 0;
+}
+
+.copyright:hover path {
+  fill: $basic-green;
+}
+
+.copyright__link:focus path {
+  fill: $basic-green;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}

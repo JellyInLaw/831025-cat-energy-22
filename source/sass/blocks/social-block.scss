@@ -19,9 +19,17 @@
   }
 }
 
+.social-list__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .social-list__item-link {
   font-size: 0;
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 23px;
   height: 23px;
 
@@ -31,26 +39,53 @@
   }
 }
 
-.social-list__item:nth-child(1) .social-list__item-link {
-  background: url("../img/social-vk.svg") no-repeat center center;
-
+.social-list__item:nth-child(1) svg {
   @media (min-width: $tablet-width) {
-    background-size: 30px 22px;
+    width: 30px;
+    height: 22px;
   }
 }
 
-.social-list__item:nth-child(2) .social-list__item-link {
-  background: url("../img/social-instagram.svg") no-repeat center center;
-
+.social-list__item:nth-child(1):hover path {
   @media (min-width: $tablet-width) {
-    background-size: 23px 23px;
+    fill: $basic-green;
   }
 }
 
-.social-list__item:nth-child(3) .social-list__item-link {
-  background: url("../img/social-facebook.svg") no-repeat center center;
-
+.social-list__item:nth-child(2) svg {
   @media (min-width: $tablet-width) {
-    background-size: 28px 33px;
+    width: 23px;
+    height: 23px;
   }
+}
+
+.social-list__item:nth-child(2):hover path {
+  @media (min-width: $tablet-width) {
+    fill: $basic-green;
+  }
+}
+
+.social-list__item:nth-child(3) svg {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.social-list__item:nth-child(3):hover path {
+  @media (min-width: $tablet-width) {
+    stroke: $basic-green;
+  }
+}
+
+.social-list__item-link:not(.social-fb-link):focus path {
+  fill: $basic-green;
+}
+
+.social-fb-link:focus path {
+  stroke: $basic-green;
+}
+
+.social-list__item-link:active path {
+  opacity: 0.3;
 }
