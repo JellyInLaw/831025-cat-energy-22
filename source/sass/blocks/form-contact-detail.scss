@@ -20,8 +20,10 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 110px;
-    padding-right: 110px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
@@ -50,7 +52,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 70px;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
