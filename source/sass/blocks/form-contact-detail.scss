@@ -1,29 +1,40 @@
 .form-contact-details {
   border: none;
-  margin: 0;
   padding: 0;
-  padding-bottom: 24px;
-  padding-top: 26px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-grow: 2;
+  max-width: 1440px;
+  overflow-x: hidden;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $basic-green;
+    width: 100%;
+    margin-top: -187px;
+    left: 0;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -225px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -147px;
+    }
   }
-}
 
-.form-contact-details .container {
   @media (min-width: $tablet-width) {
     padding-left: 70px;
-    padding-right: 64px;
-    padding-bottom: 65px;
+    padding-right: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0;
-    padding-left: 0;
-    margin-right: 0;
-    padding-right: 0;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -36,51 +47,21 @@
   line-height: 26px;
   color: $black;
   width: 206px;
-  padding-left: 20px;
   margin-bottom: 35px;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    top: 20px;
-    left: 100%;
-    background: $basic-green;
-    width: 100vw;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    top: 20px;
-    right: 100%;
-    background: $basic-green;
-    width: 100vw;
-
-    @media (min-width: $tablet-width) {
-      right: 98%;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 105%;
-    }
-  }
+  background-color: $white;
+  padding-left: 20px;
+  margin-left: -20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     width: 512px;
-    margin-left: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
     margin-bottom: 76px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: -40px;
+    padding-left: 40px;
+    margin-right: -40px;
+    padding-right: 40px;
   }
 }
 

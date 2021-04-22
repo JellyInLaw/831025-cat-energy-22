@@ -62,14 +62,16 @@
       </nav>
     </header>
     <main class="page-main page-form">
-      <div class="container page-form-container">
-        <form class="form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="container form-general-container">
-            <h1 class="form-title">Подбор программы</h1>
-            <p class="form-description">
-              Заполните анкету, и мы подберем<br />программу питания для вашего
-              кота
-            </p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="container">
+          <h1 class="form-title">Подбор программы</h1>
+          <p class="form-description">
+            Заполните анкету, и мы подберем<br />программу питания для вашего
+            кота
+          </p>
+        </div>
+        <div class="form-general-radio-container">
+          <div class="form-general-container">
             <fieldset class="form-general">
               <legend class="form-general__title visually-hidden">
                 Общие данные
@@ -108,8 +110,8 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="form-radio">
-            <div class="container">
+          <div class="form-radio-container">
+            <fieldset class="form-radio">
               <legend class="form-radio__title visually-hidden">
                 Направление программы питания
               </legend>
@@ -155,13 +157,15 @@
               >
                 Не знаю (Нужен ваш совет)
               </label>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-contact-details-container">
           <fieldset class="form-contact-details">
-            <h2 class="form-contact-detail__title">
+            <legend class="form-contact-detail__title">
               Контактные&nbsp;данные (владельца кота)
-            </h2>
-            <div class="container">
+            </legend>
+            <div class="form-contact-details-wrapper">
               <label
                 class="form-contact-detail__email-label form-contact-detail-label"
                 for="email"
@@ -220,7 +224,6 @@
                   />
                 </svg>
               </label>
-
               <label
                 class="form-contact-detail__phone-label form-contact-detail-label"
                 for="phone"
@@ -264,86 +267,80 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="form-comment">
-            <h2 class="form-comment__title">Комментарий</h2>
-            <div class="container">
-              <textarea
-                class="form-comment__input"
-                name="form-comment__input"
-                id="comment"
-                cols="30"
-                rows="3"
-                placeholder="Расскажите обо всех повадках кота"
-              ></textarea>
-            </div>
-          </fieldset>
-          <fieldset class="form-additionally">
-            <h2 class="form-additionally__title">Дополнительно</h2>
-            <div class="container">
-              <input
-                class="form-additionally__checkbox-sweetener form-additionally-input visually-hidden"
-                type="checkbox"
-                name="sweetener"
-                id="sweetener"
-                checked
-              />
-              <label
-                class="form-additionally__label-sweetener form-additionally-label"
-                for="sweetener"
-              >
-                Cахарозаменитель
-              </label>
+        </div>
+        <fieldset class="form-comment">
+          <legend class="form-comment__title">Комментарий</legend>
+          <textarea
+            class="form-comment__input"
+            name="form-comment__input"
+            id="comment"
+            cols="30"
+            rows="3"
+            placeholder="Расскажите обо всех повадках кота"
+          ></textarea>
+        </fieldset>
+        <fieldset class="form-additionally">
+          <h2 class="form-additionally__title">Дополнительно</h2>
+          <input
+            class="form-additionally__checkbox-sweetener form-additionally-input visually-hidden"
+            type="checkbox"
+            name="sweetener"
+            id="sweetener"
+            checked
+          />
+          <label
+            class="form-additionally__label-sweetener form-additionally-label"
+            for="sweetener"
+          >
+            Cахарозаменитель
+          </label>
 
-              <input
-                class="form-additionally__checkbox-water form-additionally-input visually-hidden"
-                type="checkbox"
-                name="water"
-                id="water"
-              />
-              <label
-                class="form-additionally__label-water form-additionally-label"
-                for="water"
-              >
-                Питьевая вода
-              </label>
+          <input
+            class="form-additionally__checkbox-water form-additionally-input visually-hidden"
+            type="checkbox"
+            name="water"
+            id="water"
+          />
+          <label
+            class="form-additionally__label-water form-additionally-label"
+            for="water"
+          >
+            Питьевая вода
+          </label>
 
-              <input
-                class="form-additionally__checkbox-milk form-additionally-input visually-hidden"
-                type="checkbox"
-                name="milk"
-                id="milk"
-              />
-              <label
-                class="form-additionally__label-milk form-additionally-label"
-                for="milk"
-              >
-                Молоко
-              </label>
+          <input
+            class="form-additionally__checkbox-milk form-additionally-input visually-hidden"
+            type="checkbox"
+            name="milk"
+            id="milk"
+          />
+          <label
+            class="form-additionally__label-milk form-additionally-label"
+            for="milk"
+          >
+            Молоко
+          </label>
 
-              <input
-                class="form-additionally__checkbox-vitamins form-additionally-input visually-hidden"
-                type="checkbox"
-                name="vitamins"
-                id="vitamins"
-              />
-              <label
-                class="form-additionally__label-vitamins form-additionally-label"
-                for="vitamins"
-              >
-                Витамины
-              </label>
-            </div>
-          </fieldset>
-          <div class="container">
-            <input
-              class="form__submit-button button"
-              type="submit"
-              value="Отправить заявку"
-            />
-            <p class="form__instruction">* — Обязательные поля</p>
-          </div>
-        </form>
-      </div>
+          <input
+            class="form-additionally__checkbox-vitamins form-additionally-input visually-hidden"
+            type="checkbox"
+            name="vitamins"
+            id="vitamins"
+          />
+          <label
+            class="form-additionally__label-vitamins form-additionally-label"
+            for="vitamins"
+          >
+            Витамины
+          </label>
+        </fieldset>
+        <input
+          class="form__submit-button button"
+          type="submit"
+          value="Отправить заявку"
+        />
+        <p class="form__instruction">* — Обязательные поля</p>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer-top">

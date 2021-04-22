@@ -6,47 +6,18 @@
   }
 }
 
-.page-form {
-  overflow-x: hidden;
-}
-
-.page-form-container {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-
-  @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-}
-
-.form .container {
-  @media (min-width: $desktop-width) {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 .form__submit-button {
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
     display: inline-block;
     width: 282px;
     margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
     width: 568px;
   }
 }

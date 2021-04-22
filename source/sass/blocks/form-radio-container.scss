@@ -1,0 +1,16 @@
+.form-radio-container {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    flex: 1;
+  }
+}
