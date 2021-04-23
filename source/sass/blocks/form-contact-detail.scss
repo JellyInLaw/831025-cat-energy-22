@@ -4,9 +4,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  flex-grow: 2;
   max-width: 1440px;
-  overflow-x: hidden;
 
   &::after {
     content: "";
@@ -153,36 +151,18 @@
   }
 }
 
-.form-contact-detail-input:focus + svg {
-  & line {
-    stroke: $basic-green;
-  }
-
-  & path {
-    stroke: $basic-green;
-  }
+.form-contact-detail__email-input:focus + svg {
+  stroke: $basic-green;
 }
 
 .form-contact-detail__phone-input:focus + svg {
-  & path {
-    fill: $basic-green;
-    stroke: none;
-  }
+  fill: $basic-green;
 }
 
-.input-error + svg {
-  & line {
-    stroke: $status-error;
-  }
-
-  & path {
-    stroke: $status-error;
-  }
+.form-contact-detail__email-input--input-error + svg {
+  stroke: $status-error;
 }
 
-.form-contact-detail__phone-input.input-error + svg {
-  & path {
-    fill: $status-error;
-    stroke: none;
-  }
+.form-contact-detail__phone-input--input-error + svg {
+  fill: $status-error;
 }
