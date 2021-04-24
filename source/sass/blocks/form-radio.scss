@@ -6,35 +6,20 @@
   border-bottom: 1px solid $border-grey;
   padding-top: 23px;
   padding-bottom: 20px;
-  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 70px;
     margin-bottom: 72px;
-    width: 628px;
     border: 1px solid $border-grey;
   }
 
   @media (min-width: $desktop-width) {
-    display: inline-block;
-    width: 568px;
     margin: 0;
-    padding: 27px;
-    position: absolute;
-    top: 433px;
-    margin-left: 80px;
-  }
-}
-
-.form-radio .container {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 26px;
   }
 }
 
@@ -64,8 +49,26 @@
   margin-right: 15px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio-input:checked + .radio-label::before {
   background: url("../img/radiobutton-active.svg") no-repeat center center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 18px 18px;
+  }
+}
+
+.radio-label:hover::before,
+.radio-input:focus + .radio-label::before {
+  border-color: $special-grey-4;
+}
+
+.radio-input:disabled + .radio-label {
+  opacity: 0.3;
 }

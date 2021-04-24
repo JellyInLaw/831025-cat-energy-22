@@ -1,11 +1,35 @@
 .form-comment {
   border: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1440px;
+  margin-bottom: 23px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $basic-green;
+    width: 100%;
+    margin-top: -50px;
+    left: 0;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -95px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -17,47 +41,23 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  width: 121px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 35px;
   position: relative;
   background-color: $white;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    top: 15px;
-    left: 0;
-    background: $basic-green;
-    width: 100vw;
-    z-index: -1;
-  }
+  padding-left: 20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  margin-right: -20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: $white;
     width: 182px;
-    margin-bottom: 76px;
-
-    &::after {
-      top: 20px;
-      left: -12%;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 70px;
-
-    &::after {
-      top: 20px;
-      left: -27%;
-    }
+    padding-left: 40px;
+    margin-left: -40px;
+    padding-right: 40px;
+    margin-right: -40px;
+    margin-bottom: 75px;
   }
 }
 
@@ -72,16 +72,16 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+  resize: none;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
     box-sizing: border-box;
-    width: 90%;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    width: 100%;
   }
 
   &::placeholder {

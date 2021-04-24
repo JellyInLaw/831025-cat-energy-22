@@ -9,16 +9,15 @@
 .form__submit-button {
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
     display: inline-block;
     width: 282px;
     margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
     width: 568px;
   }
 }
@@ -33,4 +32,27 @@
     display: inline-block;
     margin-left: 61px;
   }
+}
+
+.form-input,
+.form-contact-detail__email-input,
+.form-contact-detail__phone-input,
+.form-comment__input {
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $special-dark-grey;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.input-error {
+  border-color: transparent;
+  outline: 2px solid $status-error;
 }

@@ -1,25 +1,39 @@
 .form-additionally {
   border: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1440px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $basic-green;
+    width: 100%;
+    margin-top: -217px;
+    left: 0;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -183px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -125px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
-  }
-}
-
-.form-additionally .container {
-  @media (min-width: $tablet-width) {
-    margin-left: 70px;
-    padding-left: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -32,45 +46,23 @@
   line-height: 26px;
   color: $black;
   width: 141px;
-  padding-left: 20px;
-  padding-right: 23px;
   margin-bottom: 35px;
   position: relative;
   background-color: $white;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    top: 15px;
-    left: 0;
-    background: $basic-green;
-    width: 100vw;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      top: 22px;
-      left: -10%;
-    }
-  }
+  padding-left: 20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  margin-right: -20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 30px;
-    padding-left: 40px;
     width: 211px;
-    padding-right: 40px;
     margin-bottom: 57px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 70px;
-
-    &::after {
-      top: 20px;
-      left: -27%;
-    }
+    padding-left: 40px;
+    margin-left: -40px;
+    padding-right: 40px;
+    margin-right: -40px;
   }
 }
 
@@ -105,8 +97,22 @@
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  &:hover {
+    &::before {
+      border-color: $special-grey-4;
+    }
+  }
 }
 
 .form-additionally-input:checked + .form-additionally-label::before {
   background: url("../img/tick.svg") no-repeat center center;
+}
+
+.form-additionally-input:focus + .form-additionally-label::before {
+  outline: 1px solid $special-dark-grey;
+}
+
+.form-additionally-input:disabled + .form-additionally-label {
+  opacity: 0.3;
 }
