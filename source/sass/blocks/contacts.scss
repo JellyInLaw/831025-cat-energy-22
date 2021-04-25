@@ -8,7 +8,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    box-sizing: border-box;
+    background-color: $white;
+    width: 570px;
+    padding: 65px 90px 60px 75px;
+    margin-top: 90px;
   }
 }
 
