@@ -192,20 +192,41 @@
           </p>
           <div class="live-example-demonstration">
             <!-- Надо оживлять -->
-            <img
-              class="live-example-demonstration__img"
-              srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x"
-              src="img/cat-fat.png"
-              alt="Толстенький кот"
-              width="280"
-            />
-            <img
-              class="live-example-demonstration__img visually-hidden"
-              src="img/cat-skinny.png"
-              srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x"
-              alt="Нормальный кот"
-              width="280"
-            />
+
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/cat-fat-desktop.png    1x,
+                  img/cat-fat-desktop@2x.png 2x
+                "
+              />
+              <img
+                class="live-example-demonstration__img cat-fat"
+                srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x"
+                src="img/cat-fat.png"
+                alt="Толстенький кот"
+                width="280"
+              />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/cat-skinny-desktop.png    1x,
+                  img/cat-skinny-desktop@2x.png 2x
+                "
+              />
+              <img
+                class="live-example-demonstration__img visually-hidden cat-skinny"
+                src="img/cat-skinny.png"
+                srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x"
+                alt="Нормальный кот"
+                width="280"
+              />
+            </picture>
+
             <div class="demonstration-controls">
               <button
                 class="demonstration-controls__label-left demonstration-controls__label"

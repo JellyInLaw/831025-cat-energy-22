@@ -1,8 +1,6 @@
 .live-example-demonstration {
   margin: 0 auto;
-  display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
@@ -19,7 +17,16 @@
 }
 
 .live-example-demonstration__img {
+  align-items: center;
+  height: 240px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+
   @media (min-width: $tablet-width) {
-    width: 708px;
+    height: 520px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
   }
 }
