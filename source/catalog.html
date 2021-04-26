@@ -92,7 +92,7 @@
                     "
                   />
                   <img
-                    class="product-card-link__img"
+                    class="product-card-link__img product-card-link__img--small"
                     src="img/product-cards/cat-energy-PRO-500-chicken.png"
                     srcset="
                       img/product-cards/cat-energy-PRO-500-chicken@2x.png 2x
@@ -147,7 +147,7 @@
                     "
                   />
                   <img
-                    class="product-card-link__img"
+                    class="product-card-link__img product-card-link__img--big"
                     src="img/product-cards/cat-energy-PRO-1000-chicken.png"
                     srcset="
                       img/product-cards/cat-energy-PRO-1000-chicken@2x.png 2x
@@ -202,7 +202,7 @@
                     "
                   />
                   <img
-                    class="product-card-link__img"
+                    class="product-card-link__img product-card-link__img--small"
                     src="img/product-cards/cat-energy-PRO-500-fish.png"
                     srcset="img/product-cards/cat-energy-PRO-500-fish@2x.png 2x"
                     alt="Изображение упаковки Cat Energy PRO 500 г"
@@ -255,7 +255,7 @@
                     "
                   />
                   <img
-                    class="product-card-link__img"
+                    class="product-card-link__img product-card-link__img--big"
                     src="img/product-cards/cat-energy-PRO-1000-fish.png"
                     srcset="
                       img/product-cards/cat-energy-PRO-1000-fish@2x.png 2x
@@ -310,7 +310,7 @@
                     "
                   />
                   <img
-                    class="product-card-link__img"
+                    class="product-card-link__img product-card-link__img--small"
                     src="img/product-cards/cat-energy-SLIM-500-buckwheat.png"
                     srcset="
                       img/product-cards/cat-energy-SLIM-500-buckwheat@2x.png 2x
@@ -365,7 +365,7 @@
                     "
                   />
                   <img
-                    class="product-card-link__img"
+                    class="product-card-link__img product-card-link__img--big"
                     src="img/product-cards/cat-energy-SLIM-1000-buckwheat.png"
                     srcset="
                       img/product-cards/cat-energy-SLIM-1000-buckwheat@2x.png 2x
@@ -411,14 +411,25 @@
                 <h3 class="product-card-link__title">Cat Energy SLIM 500 г</h3>
               </a>
               <a href="#" class="product-card-link">
-                <img
-                  class="product-card-link__img"
-                  src="img/product-cards/cat-energy-SLIM-500-rice.png"
-                  srcset="img/product-cards/cat-energy-SLIM-500-rice@2x.png 2x"
-                  alt="Изображение упаковки Cat Energy SLIM 500 г"
-                  width="72"
-                  height="84"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/product-cards/cat-energy-SLIM-500-rice-desktop.png    1x,
+                      img/product-cards/cat-energy-SLIM-500-rice-desktop@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="product-card-link__img product-card-link__img--small"
+                    src="img/product-cards/cat-energy-SLIM-500-rice.png"
+                    srcset="
+                      img/product-cards/cat-energy-SLIM-500-rice@2x.png 2x
+                    "
+                    alt="Изображение упаковки Cat Energy SLIM 500 г"
+                    width="72"
+                    height="84"
+                  />
+                </picture>
               </a>
               <div class="product-card-description">
                 <div class="product-card-description-line">
