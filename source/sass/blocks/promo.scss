@@ -61,20 +61,18 @@
     left: 0;
     bottom: 0;
     z-index: -1;
-    //тут надо заменить картинку на нормальную
   }
 
   @media (min-width: $desktop-width) {
-    left: 560px;
+    left: 505px;
     bottom: 25px;
-    //тут надо заменить картинку на нормальную
   }
 }
 
 .promo .container {
   @media (min-width: $tablet-width) {
     padding-left: 117px;
-    padding-bottom: 526px;
+    padding-bottom: 550px;
   }
 
   @media (min-width: $desktop-width) {

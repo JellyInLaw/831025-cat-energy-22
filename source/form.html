@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/32.png" />
     <link
@@ -16,16 +17,26 @@
   </head>
   <body class="page__body page-form">
     <header class="page-header">
-      <div class="container">
+      <div class="page-header-logo-container">
         <div class="page-header-wrapper">
           <a class="page-header__logo" href="index.html">
-            <img
-              class="page-header__logo-img"
-              src="img/logo/logo.svg"
-              alt="Логотип CAT ENERGY"
-              width="34"
-              height="38"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo/logo-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo/logo-tablet.svg"
+              />
+              <img
+                class="page-header__logo-img"
+                src="img/logo/logo.svg"
+                alt="Логотип CAT ENERGY"
+                width="34"
+                height="38"
+              />
+            </picture>
           </a>
           <a class="page-header__logo" href="index.html">
             <img
@@ -42,20 +53,22 @@
       <nav class="page-header__nav">
         <ul class="main-nav">
           <li class="main-nav__item">
-            <div class="container">
+            <div class="main-nav-item-container">
               <a href="index.html" class="main-nav__item-link">Главная</a>
             </div>
           </li>
           <li class="main-nav__item">
-            <div class="container">
+            <div class="main-nav-item-container">
               <a href="catalog.html" class="main-nav__item-link">
                 Каталог продукции
               </a>
             </div>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <div class="container">
-              <a href="#" class="main-nav__item-link"> Подбор программы </a>
+          <li class="main-nav__item">
+            <div class="main-nav-item-container">
+              <a href="#" class="main-nav__item-link main-nav__item--current">
+                Подбор программы
+              </a>
             </div>
           </li>
         </ul>
@@ -343,17 +356,19 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-top">
-        <div class="container">
-          <section class="contacts">
-            <h2 class="contacts__title visually-hidden">Наши контакты</h2>
-            <p class="contacts__text">
-              Приглашаем<br />к сотрудничеству дилеров!
-            </p>
-            <p class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8
-              <span class="contacts__address-spb">Санкт-Петербург</span>
-            </p>
-          </section>
+        <div class="page-footer-top-contacts-container">
+          <div class="container">
+            <section class="contacts">
+              <h2 class="contacts__title visually-hidden">Наши контакты</h2>
+              <p class="contacts__text">
+                Приглашаем<br />к сотрудничеству дилеров!
+              </p>
+              <p class="contacts__address">
+                ул. Большая Конюшенная, д. 19/8
+                <span class="contacts__address-spb">Санкт-Петербург</span>
+              </p>
+            </section>
+          </div>
         </div>
         <div class="map">
           <!--тут будет нормальная карта-->
