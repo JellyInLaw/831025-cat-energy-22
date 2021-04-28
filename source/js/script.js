@@ -21,22 +21,27 @@ navToggle.addEventListener("click", function () {
 //nav-toggle close/open
 
 //live-example-demonstration
-const catFat = document.querySelector(".cat-fat");
-const catSkinny = document.querySelector(".cat-skinny");
-const beforeControl = document.querySelector(
-  ".demonstration-controls__label-left"
-);
-const afterControl = document.querySelector(
-  ".demonstration-controls__label-right"
-);
 
-afterControl.addEventListener("click", function () {
-  catFat.classList.add("visually-hidden");
-  catSkinny.classList.remove("visually-hidden");
-});
+const body = document.querySelector(".page__body");
 
-beforeControl.addEventListener("click", function () {
-  catFat.classList.remove("visually-hidden");
-  catSkinny.classList.add("visually-hidden");
-});
+if (body.classList.contains(".page-index")) {
+  const catFat = document.querySelector(".cat-fat");
+  const catSkinny = document.querySelector(".cat-skinny");
+  const beforeControl = document.querySelector(
+    ".demonstration-controls__label-left"
+  );
+  const afterControl = document.querySelector(
+    ".demonstration-controls__label-right"
+  );
+
+  afterControl.addEventListener("click", function () {
+    catFat.classList.add("visually-hidden");
+    catSkinny.classList.remove("visually-hidden");
+  });
+
+  beforeControl.addEventListener("click", function () {
+    catFat.classList.remove("visually-hidden");
+    catSkinny.classList.add("visually-hidden");
+  });
+}
 //live-example-demonstration
