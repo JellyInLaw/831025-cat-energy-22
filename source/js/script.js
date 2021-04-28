@@ -24,7 +24,7 @@ navToggle.addEventListener("click", function () {
 
 const body = document.querySelector(".page__body");
 
-if (body.classList.contains(".page-index")) {
+if (body.classList.contains("page-index")) {
   const catFat = document.querySelector(".cat-fat");
   const catSkinny = document.querySelector(".cat-skinny");
   const beforeControl = document.querySelector(
