@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    grid-row-gap: 140px;
   }
 
   @media (min-width: $desktop-width) {

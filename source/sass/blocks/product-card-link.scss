@@ -35,3 +35,23 @@
     order: -1;
   }
 }
+
+.product-card-link__img {
+  @media (min-width: $tablet-width) {
+    height: auto;
+    margin-top: -80px;
+    margin-bottom: 30px;
+  }
+}
+
+.product-card-link__img--small {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+  }
+}
+
+.product-card-link__img--big {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
