@@ -6,7 +6,7 @@
 
 .social-list {
   margin: 0;
-  padding: 20px 65px;
+  padding: 20px 95px;
   list-style: none;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
@@ -39,53 +39,28 @@
   }
 }
 
-.social-list__item:nth-child(1) svg {
+.social-list__item-link svg {
   @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 22px;
+    transform: scale(1.3);
   }
 }
 
-.social-list__item:nth-child(1):hover path {
-  @media (min-width: $tablet-width) {
-    fill: $basic-green;
-  }
-}
-
-.social-list__item:nth-child(2) svg {
-  @media (min-width: $tablet-width) {
-    width: 23px;
-    height: 23px;
-  }
-}
-
-.social-list__item:nth-child(2):hover path {
-  @media (min-width: $tablet-width) {
-    fill: $basic-green;
-  }
-}
-
-.social-list__item:nth-child(3) svg {
-  @media (min-width: $tablet-width) {
-    width: 28px;
-    height: 33px;
-  }
-}
-
-.social-list__item:nth-child(3):hover path {
-  @media (min-width: $tablet-width) {
-    stroke: $basic-green;
-  }
-}
-
-.social-list__item-link:not(.social-fb-link):focus path {
+.social-list__item-link:hover svg {
   fill: $basic-green;
 }
 
-.social-fb-link:focus path {
+.social-list__item-link:focus svg {
+  fill: $basic-green;
+}
+
+.social-fb-link:hover svg {
   stroke: $basic-green;
 }
 
-.social-list__item-link:active path {
+.social-fb-link:focus svg {
+  stroke: $basic-green;
+}
+
+.social-list__item-link:active {
   opacity: 0.3;
 }
