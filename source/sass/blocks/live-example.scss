@@ -1,6 +1,6 @@
 .live-example {
   background-color: $background-grey;
-  padding-top: 27px;
+  padding-top: 30px;
   padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
@@ -43,6 +43,7 @@
   margin: 0;
   padding: 0;
   margin-top: 33px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-top: 63px;
@@ -51,7 +52,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    margin-top: 146px;
+    margin-top: 150px;
   }
 }
 
@@ -68,12 +69,12 @@
   @media (min-width: $tablet-width) {
     width: 366px;
     margin: 0;
-    padding-top: 54px;
+    padding-top: 35px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    margin-top: 0;
+    margin-top: 8px;
     padding: 0;
   }
 }
@@ -147,12 +148,13 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
-  margin-top: 27px;
+  margin-top: 22px;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 64px;
+    margin-top: 45px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     width: 174px;
     text-align: right;
     align-self: center;
@@ -166,17 +168,7 @@
     margin-left: 0;
     margin-right: auto;
     width: 100%;
-  }
-}
-
-.live-example .container {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-rows: 90px 308px 132px 20px;
+    margin-top: 11px;
   }
 }
 

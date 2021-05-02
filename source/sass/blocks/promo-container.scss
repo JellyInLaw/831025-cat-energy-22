@@ -1,0 +1,15 @@
+.promo-container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 117px;
+    padding-bottom: 530px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    padding-bottom: 267px;
+    position: relative;
+  }
+}

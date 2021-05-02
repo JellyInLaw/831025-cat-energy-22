@@ -1,10 +1,10 @@
 .how-it-works {
-  padding-top: 27px;
-  padding-bottom: 42px;
+  padding-top: 25px;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 92px;
+    padding-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,11 +21,12 @@
   color: $black;
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,13 +45,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 90px;
+    grid-column-gap: 55px;
+    grid-row-gap: 110px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-column-gap: 75px;
   }
 }
 

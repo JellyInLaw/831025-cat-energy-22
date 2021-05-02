@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 55px 30px 61px 30px;
+    padding: 42px 30px 61px 30px;
     margin-top: -8px;
     align-items: center;
     box-sizing: border-box;
@@ -18,8 +18,8 @@
 
 .page-footer__logo {
   margin: 0 auto;
-  padding-top: 39px;
-  padding-bottom: 32px;
+  padding-top: 31px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
-    width: 162px;
   }
 
   &:hover {
