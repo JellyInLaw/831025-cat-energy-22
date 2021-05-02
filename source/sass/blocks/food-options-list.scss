@@ -213,4 +213,8 @@
   top: 7px;
   right: -45px;
   background: url("../img/black-arrow.svg") no-repeat center right;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+  }
 }
