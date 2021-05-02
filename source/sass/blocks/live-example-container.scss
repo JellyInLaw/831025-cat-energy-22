@@ -1,6 +1,8 @@
 .live-example-container {
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1440px;
 
   @media (min-width: $tablet-width) {
     display: grid;
