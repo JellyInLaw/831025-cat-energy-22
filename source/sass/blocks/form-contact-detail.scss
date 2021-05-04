@@ -93,14 +93,6 @@
       margin-bottom: 0;
     }
   }
-
-  &:nth-child(2)::after {
-    background: url("../img/icon-phone.svg") no-repeat center center;
-
-    @media (min-width: $desktop-width) {
-      right: 125px;
-    }
-  }
 }
 
 .form-contact-detail-input {
