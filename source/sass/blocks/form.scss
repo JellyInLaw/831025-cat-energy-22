@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 32px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -15,6 +15,9 @@
     display: inline-block;
     width: 282px;
     margin-bottom: 72px;
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +34,7 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-left: 61px;
+    margin-top: 0;
   }
 }
 

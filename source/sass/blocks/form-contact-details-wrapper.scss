@@ -1,6 +1,7 @@
 .form-contact-details-wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 73px;
   }
 }
