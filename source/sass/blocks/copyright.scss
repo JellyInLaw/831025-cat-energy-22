@@ -1,15 +1,16 @@
-.copyright {
+.copyright-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 0;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
 
-.copyright__link {
+.copyright-link__text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -21,18 +22,14 @@
   }
 }
 
-.copyright__link.copyright__html-academy-logo {
-  margin-right: 0;
-}
-
-.copyright:hover path {
+.copyright:hover svg {
   fill: $basic-green;
 }
 
-.copyright__link:focus path {
+.copyright-link:focus svg {
   fill: $basic-green;
 }
 
-.copyright__link:active {
+.copyright-link:active {
   opacity: 0.3;
 }

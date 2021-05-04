@@ -18,14 +18,13 @@
 
 .live-example-demonstration__img {
   align-items: center;
-  height: 240px;
+  height: 220px;
   width: auto;
   margin: 0 auto;
   display: block;
 
   @media (min-width: $tablet-width) {
     height: 520px;
-    width: auto;
     margin: 0 auto;
     display: block;
   }
