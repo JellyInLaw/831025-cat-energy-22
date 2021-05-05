@@ -2,7 +2,7 @@
   border: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -34,7 +34,7 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -49,6 +49,10 @@
   color: $special-dark-grey;
   margin-left: 13px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 20px;
+  }
 }
 
 .form-input::placeholder {

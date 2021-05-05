@@ -1,7 +1,7 @@
 .form-additionally {
   border: none;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 1440px;
@@ -12,21 +12,21 @@
     height: 2px;
     background-color: $basic-green;
     width: 100%;
-    margin-top: -217px;
+    margin-top: -204px;
     left: 0;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      margin-top: -183px;
+      margin-top: -185px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: -125px;
+      margin-top: -112px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 43px;
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -34,6 +34,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
+    margin-bottom: 50px;
   }
 }
 
@@ -95,7 +96,11 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
