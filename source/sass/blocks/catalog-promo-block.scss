@@ -1,7 +1,7 @@
 .catalog-promo-block {
   @media (min-width: $tablet-width) {
     margin-top: 70px;
-    margin-bottom: 76px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -9,21 +9,6 @@
     margin: 0;
     padding: 0;
     align-self: flex-end;
-  }
-}
-
-.catalog-promo-block-container {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
   }
 }
 
@@ -65,7 +50,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 205px 41px 42px 41px;
+    padding: 188px 41px 42px 41px;
     text-align: center;
     background: $basic-green
       url("../img/special-invitation-background-desktop.jpg") no-repeat center

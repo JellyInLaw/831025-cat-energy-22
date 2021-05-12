@@ -5,7 +5,6 @@
   line-height: 36px;
   color: $black;
   border-bottom: 1px solid $special-grey-2;
-  text-align: center;
   padding-top: 27px;
   padding-bottom: 41px;
 
@@ -13,12 +12,14 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 65px;
+    padding-top: 59px;
     padding-bottom: 165px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
+    padding-top: 68px;
+    padding-bottom: 169px;
   }
 }
