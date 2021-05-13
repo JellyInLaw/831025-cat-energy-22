@@ -26,12 +26,13 @@
       background: url("../../img/plus.svg") no-repeat center center;
       background-size: cover;
       margin-bottom: 49px;
+      margin-top: 46px;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
     font-size: 20px;
     line-height: 22px;
     width: 134px;
@@ -44,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-bottom: 87px;
+    margin-bottom: 77px;
     border-bottom: none;
     width: 167px;
     line-height: 18px;

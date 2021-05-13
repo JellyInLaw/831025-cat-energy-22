@@ -1,7 +1,7 @@
 .product-card-additional {
   border-top: 1px solid $special-grey;
   padding-bottom: 19px;
-  padding-top: 13px;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -10,16 +10,17 @@
     align-items: center;
     border: 1px solid $special-grey;
     border-bottom: none;
-    padding: 26px 38px 28px 38px;
+    padding: 23px 38px 0 38px;
   }
 
   @media (min-width: $desktop-width) {
+    align-items: baseline;
     border-left: none;
     border-right: none;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 25px;
-    padding-bottom: 17px;
+    padding-top: 21px;
+    padding-bottom: 16px;
   }
 }
 
@@ -39,6 +40,8 @@
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 13px;
+    margin-bottom: 27px;
     width: 100%;
   }
 
