@@ -6,6 +6,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const htmlmin = require("gulp-htmlmin");
+const terser = require("gulp-terser");
+const rename = require("gulp-rename");
 
 // HTML
 
@@ -17,6 +19,19 @@ const html = () => {
 };
 
 exports.html = html;
+
+// Scripts
+
+const scripts = () => {
+  return gulp
+    .src("source/js/script.js")
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+};
+
+exports.scripts = scripts;
 
 // Styles
 
@@ -39,7 +54,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source",
+      baseDir: "build",
     },
     cors: true,
     notify: false,
