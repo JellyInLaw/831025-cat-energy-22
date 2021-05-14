@@ -61,7 +61,7 @@ const optimizeImages = () => {
     .pipe(
       imagemin([
         imagemin.mozjpeg({ progressive: true }),
-        imagemin.optipng({ optimizationLevel: 1 }),
+        imagemin.optipng({ optimizationLevel: 3 }),
         imagemin.svgo(),
       ])
     )
