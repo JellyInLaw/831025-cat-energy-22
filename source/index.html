@@ -13,7 +13,7 @@
       sizes="152x152"
       href="img/favicon/152.png"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page__body page-index">
     <header class="page-header">
@@ -40,7 +40,7 @@
           </a>
           <a class="page-header__logo page-header__logo-text" href="index.html">
             <svg width="101" height="18">
-              <use xlink:href="sprite.svg#logo-text"></use>
+              <use xlink:href="img/sprite.svg#logo-text"></use>
             </svg>
           </a>
           <button class="nav-toggle" aria-label="Открыть меню"></button>
@@ -79,6 +79,29 @@
           </h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/index-can-cat-energy-desktop.webp    1x,
+                img/index-can-cat-energy-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/index-can-cat-energy-tablet.webp    1x,
+                img/index-can-cat-energy-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                img/index-can-cat-energy.webp    1x,
+                img/index-can-cat-energy@2x.webp 2x
+              "
+            />
             <source
               media="(min-width: 1440px)"
               srcset="
@@ -185,6 +208,18 @@
 
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/cat-fat-desktop.webp    1x,
+                  img/cat-fat-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x"
+              />
+              <source
                 media="(min-width: 768px)"
                 srcset="
                   img/cat-fat-desktop.png    1x,
@@ -203,6 +238,18 @@
 
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/cat-skinny-desktop.webp    1x,
+                  img/cat-skinny-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x"
+              />
+              <source
                 media="(min-width: 768px)"
                 srcset="
                   img/cat-skinny-desktop.png    1x,
@@ -210,7 +257,11 @@
                 "
               />
               <img
-                class="live-example-demonstration__img visually-hidden cat-skinny"
+                class="
+                  live-example-demonstration__img
+                  visually-hidden
+                  cat-skinny
+                "
                 src="img/cat-skinny.png"
                 srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x"
                 alt="Нормальный кот"
@@ -221,7 +272,10 @@
 
             <div class="demonstration-controls">
               <button
-                class="demonstration-controls__label-left demonstration-controls__label"
+                class="
+                  demonstration-controls__label-left
+                  demonstration-controls__label
+                "
               >
                 Было
               </button>
@@ -229,7 +283,10 @@
                 <div class="demonstration-controls__progress-bar"></div>
               </div>
               <button
-                class="demonstration-controls__label-right demonstration-controls__label"
+                class="
+                  demonstration-controls__label-right
+                  demonstration-controls__label
+                "
               >
                 Стало
               </button>
@@ -270,7 +327,7 @@
         <div class="page-footer-bottom">
           <a href="index.html" class="page-footer__logo">
             <svg width="128" height="24" fill="#111111">
-              <use xlink:href="sprite.svg#logo-text"></use>
+              <use xlink:href="img/sprite.svg#logo-text"></use>
             </svg>
           </a>
           <section class="social-block">
@@ -283,7 +340,7 @@
                   Вконтакте
                   <svg width="23" height="13" fill="#666666">
                     <use
-                      xlink:href="sprite.svg#vk-icon"
+                      xlink:href="img/sprite.svg#vk-icon"
                       aria-label="vkontakte"
                     ></use>
                   </svg>
@@ -297,7 +354,7 @@
                 >
                   Instagram
                   <svg width="16" height="16" fill="#666666">
-                    <use xlink:href="sprite.svg#inst-icon"></use>
+                    <use xlink:href="img/sprite.svg#inst-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -305,7 +362,7 @@
                 <a href="#" class="social-list__item-link social-fb-link">
                   Facebook
                   <svg width="13" height="20" stroke="#666666">
-                    <use xlink:href="sprite.svg#fb-icon"></use>
+                    <use xlink:href="img/sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -317,7 +374,7 @@
               <a class="copyright-link" href="https://htmlacademy.ru/">
                 <span class="copyright-link__text">HTML Academy</span>
                 <svg width="27" height="34" fill="#666666">
-                  <use xlink:href="sprite.svg#html-academy"></use>
+                  <use xlink:href="img/sprite.svg#html-academy"></use>
                 </svg>
               </a>
             </section>
@@ -325,6 +382,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
