@@ -12,6 +12,10 @@
   }
 }
 
+.display-no-js {
+  display: none;
+}
+
 .nav-toggle__open {
   background: url("../img/nav-toggle-cross.svg") no-repeat center center;
   transform: rotate(90deg);
