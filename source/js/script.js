@@ -11,7 +11,6 @@ navToggle.classList.remove("display-no-js");
 window.addEventListener("resize", function () {
   if (document.documentElement.clientWidth < 768) {
     mainNav.classList.add("visually-hidden");
-    navToggle.classList.add("display-block");
   } else {
     mainNav.classList.remove("visually-hidden");
   }
