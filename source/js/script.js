@@ -1,12 +1,16 @@
 //nav-toggle close/open
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
+const pageHeaderWrapper = document.querySelector(".page-header-wrapper");
+const pageHeaderLogo = document.querySelector(".page-header__logo");
 
 if (document.documentElement.clientWidth < 750) {
   mainNav.classList.add("visually-hidden");
 }
 
 navToggle.classList.remove("display-no-js");
+pageHeaderWrapper.classList.remove("page-header-wrapper--no-js");
+pageHeaderLogo.classList.remove("page-header__logo--no-js");
 
 window.addEventListener("resize", function () {
   if (document.documentElement.clientWidth < 750) {

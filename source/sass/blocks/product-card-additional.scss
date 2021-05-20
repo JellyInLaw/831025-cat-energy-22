@@ -1,6 +1,6 @@
 .product-card-additional {
   border-top: 1px solid $special-grey;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
   padding-top: 11px;
 
   @media (min-width: $tablet-width) {
@@ -36,12 +36,12 @@
 }
 
 .product-card-additional .product-card__button {
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 13px;
-    margin-bottom: 27px;
+    margin-top: 10px;
+    margin-bottom: 28px;
     width: 100%;
   }
 
