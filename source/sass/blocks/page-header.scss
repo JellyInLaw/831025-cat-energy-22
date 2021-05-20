@@ -19,6 +19,10 @@
   }
 }
 
+.page-header__logo--no-js {
+  margin-right: 60px;
+}
+
 .page-header__logo-img {
   @media (min-width: $tablet-width) {
     width: 174px;
