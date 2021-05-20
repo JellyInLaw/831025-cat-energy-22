@@ -56,6 +56,9 @@
 }
 
 .promo__img {
+  max-width: 100%;
+  height: auto;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 709px;
