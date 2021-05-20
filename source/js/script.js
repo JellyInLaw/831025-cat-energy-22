@@ -2,14 +2,14 @@
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
 
-if (document.documentElement.clientWidth < 768) {
+if (document.documentElement.clientWidth < 750) {
   mainNav.classList.add("visually-hidden");
 }
 
 navToggle.classList.remove("display-no-js");
 
 window.addEventListener("resize", function () {
-  if (document.documentElement.clientWidth < 768) {
+  if (document.documentElement.clientWidth < 750) {
     mainNav.classList.add("visually-hidden");
   } else {
     mainNav.classList.remove("visually-hidden");
