@@ -1,4 +1,9 @@
-/* blocks */
+@import "fonts.scss";
+@import "vars.scss";
+@import "container.scss";
+@import "global.scss";
+
+// blocks
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-header-wrapper.scss";
@@ -15,7 +20,6 @@
 @import "blocks/demonstration-controls.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/page-footer-top.scss";
 @import "blocks/page-footer-top-contacts-container.scss";
 @import "blocks/page-footer-bottom.scss";
 @import "blocks/map.scss";
@@ -46,9 +50,3 @@
 @import "blocks/form-additionally.scss";
 @import "blocks/form-submit-container.scss";
 @import "blocks/form.scss";
-
-// common
-@import "fonts.scss";
-@import "vars.scss";
-@import "container.scss";
-@import "global.scss";

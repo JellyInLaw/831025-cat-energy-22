@@ -2,7 +2,15 @@
   background-color: $basic-grey;
 }
 
-.page-footer-container {
+.page-footer__top {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.page-footer__container {
   max-width: 1440px;
 
   margin: 0 auto;
