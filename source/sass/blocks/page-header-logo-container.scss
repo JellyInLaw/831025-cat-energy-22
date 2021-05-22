@@ -1,0 +1,10 @@
+.page-header-logo-container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+  }
+}
