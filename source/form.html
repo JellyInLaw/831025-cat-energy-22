@@ -25,8 +25,11 @@
   <body class="page__body page-form">
     <header class="page-header">
       <div class="page-header-logo-container">
-        <div class="page-header-wrapper">
-          <a class="page-header__logo" href="index.html">
+        <div class="page-header-wrapper page-header-wrapper--no-js">
+          <a
+            class="page-header__logo page-header__logo--no-js"
+            href="index.html"
+          >
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -55,7 +58,7 @@
             />
           </a>
           <button
-            class="nav-toggle display-none"
+            class="nav-toggle display-no-js"
             aria-label="Открыть меню"
           ></button>
         </div>
@@ -419,7 +422,7 @@
             </ul>
           </section>
           <div class="container">
-             <section class="copyright">
+            <section class="copyright">
               <h2 class="copyright__title visually-hidden">Авторское право</h2>
               <a class="copyright__link" href="https://htmlacademy.ru/">
                 <span class="copyright__link-text">HTML Academy</span>
