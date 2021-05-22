@@ -4,6 +4,18 @@
   padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $background-grey;
+      width: 100vw;
+      height: 462px;
+      z-index: -1;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
     padding-top: 43px;
     background-color: transparent;
     border-top: 1px solid $special-grey-border;
@@ -169,18 +181,6 @@
     margin-right: auto;
     width: 100%;
     margin-top: 11px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .live-example__grey-background {
-    display: block;
-    position: absolute;
-    background-color: $background-grey;
-    width: 100%;
-    height: 462px;
-    bottom: 0;
-    z-index: -1;
   }
 }
 
