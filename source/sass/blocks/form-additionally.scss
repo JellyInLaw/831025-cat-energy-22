@@ -67,7 +67,7 @@
   }
 }
 
-.form-additionally-label {
+.form-additionally__label {
   font-family: $title-font;
   font-size: 16px;
   line-height: 18px;
@@ -110,14 +110,14 @@
   }
 }
 
-.form-additionally-input:checked + .form-additionally-label::before {
+.form-additionally__input:checked + .form-additionally__label::before {
   background: url("../img/tick.svg") no-repeat center center;
 }
 
-.form-additionally-input:focus + .form-additionally-label::before {
+.form-additionally__input:focus + .form-additionally__label::before {
   outline: 1px solid $special-dark-grey;
 }
 
-.form-additionally-input:disabled + .form-additionally-label {
+.form-additionally__input:disabled + .form-additionally__label {
   opacity: 0.3;
 }

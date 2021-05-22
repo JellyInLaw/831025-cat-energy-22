@@ -100,10 +100,10 @@
               <legend class="form-general__title visually-hidden">
                 Общие данные
               </legend>
-              <label class="form-general__name-label form-label" for="name">
+              <label class="form-general__label" for="name">
                 Имя:*
                 <input
-                  class="form-general__name-input form-input"
+                  class="form-general__input"
                   type="text"
                   name="name"
                   id="name"
@@ -111,10 +111,10 @@
                 />
               </label>
 
-              <label class="form-general__weight-label form-label" for="weight">
+              <label class="form-general__label" for="weight">
                 Вес&nbsp;(кг):*
                 <input
-                  class="form-general__weight-input form-input"
+                  class="form-general__input"
                   type="text"
                   name="name"
                   id="weight"
@@ -122,10 +122,10 @@
                 />
               </label>
 
-              <label class="form-general__age-label form-label" for="age">
+              <label class="form-general__label" for="age">
                 Возраст&nbsp;(лет):
                 <input
-                  class="form-general__age-input form-input"
+                  class="form-general__input"
                   type="text"
                   name="name"
                   id="age"
@@ -140,49 +140,36 @@
                 Направление программы питания
               </legend>
               <input
-                class="form-radio__slimming-radio radio-input visually-hidden"
+                class="form-radio__input visually-hidden"
                 type="radio"
                 name="form-radio"
                 value="slimming"
                 id="slimming"
                 checked
               />
-              <label
-                class="form-radio__slimming-label radio-label"
-                for="slimming"
-              >
+              <label class="form-radio__label" for="slimming">
                 Похудение
               </label>
 
               <input
-                class="
-                  form-radio__weight-gain-radio
-                  radio-input
-                  visually-hidden
-                "
+                class="form-radio__input visually-hidden"
                 type="radio"
                 name="form-radio"
                 value="weight-gain"
                 id="weight-gain"
               />
-              <label
-                class="form-radio__weight-gain-label radio-label"
-                for="weight-gain"
-              >
+              <label class="form-radio__label" for="weight-gain">
                 Набор массы
               </label>
 
               <input
-                class="form-radio__dont-know-radio radio-input visually-hidden"
+                class="form-radio__input visually-hidden"
                 type="radio"
                 name="form-radio"
                 value="dont-know"
                 id="dont-know"
               />
-              <label
-                class="form-radio__dont-know-label radio-label"
-                for="dont-know"
-              >
+              <label class="form-radio__label" for="dont-know">
                 Не знаю (Нужен ваш совет)
               </label>
             </fieldset>
@@ -196,8 +183,7 @@
             <div class="form-contact-details-wrapper">
               <label
                 class="
-                  form-contact-details__email-label
-                  form-contact-details-label
+                  form-contact-details__email-label form-contact-details__label
                 "
                 for="email"
               >
@@ -205,7 +191,7 @@
                 <input
                   class="
                     form-contact-details__email-input
-                    form-contact-details-input
+                    form-contact-details__input
                   "
                   type="text"
                   name="email"
@@ -225,8 +211,7 @@
               </label>
               <label
                 class="
-                  form-contact-details__phone-label
-                  form-contact-details-label
+                  form-contact-details__phone-label form-contact-details__label
                 "
                 for="phone"
               >
@@ -234,7 +219,7 @@
                 <input
                   class="
                     form-contact-details__phone-input
-                    form-contact-details-input
+                    form-contact-details__input
                   "
                   type="text"
                   name="phone"
@@ -271,8 +256,7 @@
           <div class="form-additionally-wrapper">
             <input
               class="
-                form-additionally__checkbox-sweetener
-                form-additionally-input
+                form-additionally__checkbox-sweetener form-additionally__input
                 visually-hidden
               "
               type="checkbox"
@@ -281,7 +265,9 @@
               checked
             />
             <label
-              class="form-additionally__label-sweetener form-additionally-label"
+              class="
+                form-additionally__label-sweetener form-additionally__label
+              "
               for="sweetener"
             >
               Cахарозаменитель
@@ -289,8 +275,7 @@
 
             <input
               class="
-                form-additionally__checkbox-water
-                form-additionally-input
+                form-additionally__checkbox-water form-additionally__input
                 visually-hidden
               "
               type="checkbox"
@@ -298,7 +283,7 @@
               id="water"
             />
             <label
-              class="form-additionally__label-water form-additionally-label"
+              class="form-additionally__label-water form-additionally__label"
               for="water"
             >
               Питьевая вода
@@ -306,8 +291,7 @@
 
             <input
               class="
-                form-additionally__checkbox-milk
-                form-additionally-input
+                form-additionally__checkbox-milk form-additionally__input
                 visually-hidden
               "
               type="checkbox"
@@ -315,7 +299,7 @@
               id="milk"
             />
             <label
-              class="form-additionally__label-milk form-additionally-label"
+              class="form-additionally__label-milk form-additionally__label"
               for="milk"
             >
               Молоко
@@ -323,8 +307,7 @@
 
             <input
               class="
-                form-additionally__checkbox-vitamins
-                form-additionally-input
+                form-additionally__checkbox-vitamins form-additionally__input
                 visually-hidden
               "
               type="checkbox"
@@ -332,7 +315,7 @@
               id="vitamins"
             />
             <label
-              class="form-additionally__label-vitamins form-additionally-label"
+              class="form-additionally__label-vitamins form-additionally__label"
               for="vitamins"
             >
               Витамины

@@ -38,10 +38,7 @@
   }
 }
 
-.form-input,
-.form-contact-detail__email-input,
-.form-contact-detail__phone-input,
-.form-comment__input {
+.form__input {
   &:hover {
     border-color: $special-grey;
   }
@@ -54,9 +51,4 @@
   &:disabled {
     opacity: 0.3;
   }
-}
-
-.input-error {
-  border-color: transparent;
-  outline: 2px solid $status-error;
 }

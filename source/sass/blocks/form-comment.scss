@@ -98,4 +98,17 @@
       line-height: 30px;
     }
   }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $special-dark-grey;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }

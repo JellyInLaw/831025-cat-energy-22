@@ -40,3 +40,8 @@
 .display-no-js {
   display: none;
 }
+
+.input--error {
+  border-color: transparent;
+  outline: 2px solid $status-error;
+}
