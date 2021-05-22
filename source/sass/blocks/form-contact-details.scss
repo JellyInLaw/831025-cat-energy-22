@@ -5,23 +5,21 @@
   padding-left: 20px;
   padding-right: 20px;
   max-width: 1440px;
+  position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     height: 2px;
     background-color: $basic-green;
     width: 100%;
-    margin-top: -176px;
+    // margin-top: -176px;
     left: 0;
+    top: -70px;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      margin-top: -215px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: -139px;
+      top: -90px;
     }
   }
 
@@ -90,7 +88,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
   }
 }
