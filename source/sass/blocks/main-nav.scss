@@ -64,12 +64,6 @@
   }
 }
 
-.page-index .main-nav__item--current {
-  @media (min-width: $desktop-width) {
-    border-bottom: 2px solid $white;
-  }
-}
-
 .main-nav__item-link {
   text-decoration: none;
   color: $black;
@@ -91,5 +85,11 @@
 .page-index .main-nav__item-link {
   @media (min-width: $desktop-width) {
     color: $white;
+  }
+}
+
+.page-index .main-nav__item--current {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
   }
 }
