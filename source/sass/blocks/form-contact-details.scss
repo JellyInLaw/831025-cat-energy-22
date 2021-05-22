@@ -63,7 +63,7 @@
   }
 }
 
-.form-contact-details-label {
+.form-contact-details__label {
   position: relative;
   font-family: $title-font;
   font-size: 16px;
@@ -95,7 +95,7 @@
   }
 }
 
-.form-contact-details-input {
+.form-contact-details__input {
   font-family: $title-font;
   font-style: normal;
   font-weight: normal;
@@ -138,7 +138,7 @@
   }
 }
 
-.form-contact-details-label svg {
+.form-contact-details__label svg {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -159,4 +159,20 @@
 
 .form-contact-details__phone-input--input-error + svg {
   fill: $status-error;
+}
+
+.form-contact-details__email-input,
+.form-contact-details__phone-input {
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $special-dark-grey;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }

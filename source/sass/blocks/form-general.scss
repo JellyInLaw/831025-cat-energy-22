@@ -14,7 +14,7 @@
   }
 }
 
-.form-label {
+.form-general__label {
   font-family: $title-font;
   font-size: 16px;
   line-height: 18px;
@@ -30,7 +30,7 @@
   }
 }
 
-.form-label:not(:last-child) {
+.form-general__label:not(:last-child) {
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
   }
 }
 
-.form-input {
+.form-general__input {
   border: 1px solid $special-grey-border;
   box-sizing: border-box;
   padding: 13px 14px;
@@ -53,9 +53,22 @@
   @media (min-width: $tablet-width) {
     padding: 15px 20px;
   }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $special-dark-grey;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
-.form-input::placeholder {
+.form-general__input::placeholder {
   font-family: $title-font;
   font-size: 16px;
   line-height: 18px;

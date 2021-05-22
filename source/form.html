@@ -25,8 +25,11 @@
   <body class="page__body page-form">
     <header class="page-header">
       <div class="page-header-logo-container">
-        <div class="page-header-wrapper">
-          <a class="page-header__logo" href="index.html">
+        <div class="page-header-wrapper page-header-wrapper--no-js">
+          <a
+            class="page-header__logo page-header__logo--no-js"
+            href="index.html"
+          >
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -55,7 +58,7 @@
             />
           </a>
           <button
-            class="nav-toggle display-none"
+            class="nav-toggle display-no-js"
             aria-label="Открыть меню"
           ></button>
         </div>
@@ -97,10 +100,10 @@
               <legend class="form-general__title visually-hidden">
                 Общие данные
               </legend>
-              <label class="form-general__name-label form-label" for="name">
+              <label class="form-general__label" for="name">
                 Имя:*
                 <input
-                  class="form-general__name-input form-input"
+                  class="form-general__input"
                   type="text"
                   name="name"
                   id="name"
@@ -108,10 +111,10 @@
                 />
               </label>
 
-              <label class="form-general__weight-label form-label" for="weight">
+              <label class="form-general__label" for="weight">
                 Вес&nbsp;(кг):*
                 <input
-                  class="form-general__weight-input form-input"
+                  class="form-general__input"
                   type="text"
                   name="name"
                   id="weight"
@@ -119,10 +122,10 @@
                 />
               </label>
 
-              <label class="form-general__age-label form-label" for="age">
+              <label class="form-general__label" for="age">
                 Возраст&nbsp;(лет):
                 <input
-                  class="form-general__age-input form-input"
+                  class="form-general__input"
                   type="text"
                   name="name"
                   id="age"
@@ -137,49 +140,36 @@
                 Направление программы питания
               </legend>
               <input
-                class="form-radio__slimming-radio radio-input visually-hidden"
+                class="form-radio__input visually-hidden"
                 type="radio"
                 name="form-radio"
                 value="slimming"
                 id="slimming"
                 checked
               />
-              <label
-                class="form-radio__slimming-label radio-label"
-                for="slimming"
-              >
+              <label class="form-radio__label" for="slimming">
                 Похудение
               </label>
 
               <input
-                class="
-                  form-radio__weight-gain-radio
-                  radio-input
-                  visually-hidden
-                "
+                class="form-radio__input visually-hidden"
                 type="radio"
                 name="form-radio"
                 value="weight-gain"
                 id="weight-gain"
               />
-              <label
-                class="form-radio__weight-gain-label radio-label"
-                for="weight-gain"
-              >
+              <label class="form-radio__label" for="weight-gain">
                 Набор массы
               </label>
 
               <input
-                class="form-radio__dont-know-radio radio-input visually-hidden"
+                class="form-radio__input visually-hidden"
                 type="radio"
                 name="form-radio"
                 value="dont-know"
                 id="dont-know"
               />
-              <label
-                class="form-radio__dont-know-label radio-label"
-                for="dont-know"
-              >
+              <label class="form-radio__label" for="dont-know">
                 Не знаю (Нужен ваш совет)
               </label>
             </fieldset>
@@ -193,8 +183,7 @@
             <div class="form-contact-details-wrapper">
               <label
                 class="
-                  form-contact-details__email-label
-                  form-contact-details-label
+                  form-contact-details__email-label form-contact-details__label
                 "
                 for="email"
               >
@@ -202,7 +191,7 @@
                 <input
                   class="
                     form-contact-details__email-input
-                    form-contact-details-input
+                    form-contact-details__input
                   "
                   type="text"
                   name="email"
@@ -222,8 +211,7 @@
               </label>
               <label
                 class="
-                  form-contact-details__phone-label
-                  form-contact-details-label
+                  form-contact-details__phone-label form-contact-details__label
                 "
                 for="phone"
               >
@@ -231,7 +219,7 @@
                 <input
                   class="
                     form-contact-details__phone-input
-                    form-contact-details-input
+                    form-contact-details__input
                   "
                   type="text"
                   name="phone"
@@ -268,8 +256,7 @@
           <div class="form-additionally-wrapper">
             <input
               class="
-                form-additionally__checkbox-sweetener
-                form-additionally-input
+                form-additionally__checkbox-sweetener form-additionally__input
                 visually-hidden
               "
               type="checkbox"
@@ -278,7 +265,9 @@
               checked
             />
             <label
-              class="form-additionally__label-sweetener form-additionally-label"
+              class="
+                form-additionally__label-sweetener form-additionally__label
+              "
               for="sweetener"
             >
               Cахарозаменитель
@@ -286,8 +275,7 @@
 
             <input
               class="
-                form-additionally__checkbox-water
-                form-additionally-input
+                form-additionally__checkbox-water form-additionally__input
                 visually-hidden
               "
               type="checkbox"
@@ -295,7 +283,7 @@
               id="water"
             />
             <label
-              class="form-additionally__label-water form-additionally-label"
+              class="form-additionally__label-water form-additionally__label"
               for="water"
             >
               Питьевая вода
@@ -303,8 +291,7 @@
 
             <input
               class="
-                form-additionally__checkbox-milk
-                form-additionally-input
+                form-additionally__checkbox-milk form-additionally__input
                 visually-hidden
               "
               type="checkbox"
@@ -312,7 +299,7 @@
               id="milk"
             />
             <label
-              class="form-additionally__label-milk form-additionally-label"
+              class="form-additionally__label-milk form-additionally__label"
               for="milk"
             >
               Молоко
@@ -320,8 +307,7 @@
 
             <input
               class="
-                form-additionally__checkbox-vitamins
-                form-additionally-input
+                form-additionally__checkbox-vitamins form-additionally__input
                 visually-hidden
               "
               type="checkbox"
@@ -329,7 +315,7 @@
               id="vitamins"
             />
             <label
-              class="form-additionally__label-vitamins form-additionally-label"
+              class="form-additionally__label-vitamins form-additionally__label"
               for="vitamins"
             >
               Витамины
@@ -347,7 +333,7 @@
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer-top">
+      <div class="page-footer__top">
         <div class="page-footer-top-contacts-container">
           <div class="container">
             <section class="contacts">
@@ -363,17 +349,15 @@
           </div>
         </div>
         <div class="map">
-          <!--тут будет нормальная карта-->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123923!2d30.320894616011067!3d59.93879686904801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1617970254149!5m2!1sru!2sru"
             allowfullscreen=""
             loading="lazy"
             height="362"
           ></iframe>
-          <!--тут будет нормальная карта-->
         </div>
       </div>
-      <div class="page-footer-container">
+      <div class="page-footer__container">
         <div class="page-footer-bottom">
           <a href="index.html" class="page-footer__logo">
             <svg width="128" height="24" fill="#111111">
@@ -421,8 +405,8 @@
           <div class="container">
             <section class="copyright">
               <h2 class="copyright__title visually-hidden">Авторское право</h2>
-              <a class="copyright-link" href="https://htmlacademy.ru/">
-                <span class="copyright-link__text">HTML Academy</span>
+              <a class="copyright__link" href="https://htmlacademy.ru/">
+                <span class="copyright__link-text">HTML Academy</span>
                 <svg width="27" height="34" fill="#666666">
                   <use xlink:href="img/sprite.svg#html-academy"></use>
                 </svg>

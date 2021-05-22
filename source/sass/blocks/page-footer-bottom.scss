@@ -16,32 +16,6 @@
   }
 }
 
-.page-footer__logo {
-  margin: 0 auto;
-  padding-top: 31px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:focus {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
 .page-footer-bottom .container {
   @media (min-width: $tablet-width) {
     margin: 0;
