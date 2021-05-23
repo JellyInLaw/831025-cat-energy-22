@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи»
 
-Ccылка на pages: https://jellyinlaw.github.io/831025-cat-energy-22/form.html
+Ccылка на pages: https://jellyinlaw.github.io/831025-cat-energy-22/index.html
 
 - Студент: [Максим Шашурин](https://up.htmlacademy.ru/adaptive/22/user/831025).
 - Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
